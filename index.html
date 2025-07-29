@@ -1,39 +1,129 @@
+
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Мой сайт</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #333;
-      text-align: center;
-      padding: 50px;
-    }
-    h1 {
-      color: #2c3e50;
-    }
-    a {
-      color: #3498db;
-      text-decoration: none;
-    }
-    .card {
-      background: white;
-      max-width: 500px;
-      margin: auto;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PracaPlus - Rekrutacja</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+        .overlay {
+            background: rgba(0,0,0,0.6);
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            animation: fadeInDown 1s ease-out;
+        }
+        p {
+            font-size: 1.2em;
+            max-width: 600px;
+            animation: fadeInUp 1s ease-out;
+        }
+        .photo {
+            margin: 30px 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .photo img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            box-shadow: 0 0 20px rgba(255,255,255,0.3);
+        }
+        .jobs {
+            margin: 40px 0;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        .jobs h2 {
+            margin-bottom: 10px;
+            font-size: 1.8em;
+        }
+        .jobs ul {
+            list-style: none;
+            padding: 0;
+            font-size: 1.1em;
+        }
+        .jobs li {
+            margin: 6px 0;
+        }
+        .btn {
+            margin-top: 30px;
+            padding: 12px 25px;
+            font-size: 1.2em;
+            color: #fff;
+            background: #27ae60;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .btn:hover {
+            background: #219150;
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            .btn {
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Привет! Я Алекс</h1>
-    <p>Это мой простой сайт-визитка, размещённый через GitHub Pages.</p>
-    <p>Связаться со мной: <a href="https://t.me/username" target="_blank">Telegram</a></p>
-  </div>
+    <div class="overlay">
+        <h1>PracaPlus</h1>
+        <p>Pomagamy znaleźć legalną i stabilną pracę w Polsce.</p>
+
+        <div class="photo">
+            <img src="me.jpg" alt="Roman">
+        </div>
+
+        <p>Nazywam się Roman. Od lat łączę pracowników z rzetelnymi pracodawcami w całej Polsce.</p>
+
+        <div class="jobs">
+            <h2>Aktualne oferty pracy:</h2>
+            <ul>
+                <li>Pracownik magazynu</li>
+                <li>Operator produkcji</li>
+                <li>Kierowca kat. B</li>
+                <li>Pracownik budowlany</li>
+                <li>Sprzątanie i utrzymanie czystości</li>
+            </ul>
+        </div>
+
+        <a class="btn" href="https://t.me/roman_hr" target="_blank">Napisz na Telegram</a>
+    </div>
 </body>
 </html>
