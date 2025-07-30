@@ -1,90 +1,65 @@
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Roman Kudria Recruiter – Praca w Polsce i za granicą</title>
   <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
+    body { margin:0; font-family:sans-serif;
       background: url('background.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #fff;
-    }
-    .overlay {
-      background: rgba(0,0,0,0.6);
-      min-height: 100vh;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    h1 {
-      font-size: 2.8em;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 1.2em;
-      max-width: 700px;
-      margin: 0 auto 20px;
-    }
-    .photo img {
-      width: 220px;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 5px solid #fff;
-      margin: 30px 0;
-      box-shadow: 0 0 25px rgba(255,255,255,0.3);
-    }
-    iframe {
-      width: 100%;
-      max-width: 900px;
-      height: 600px;
-      border: none;
-      border-radius: 12px;
-      margin: 20px auto;
-      display: block;
-    }
-    .float-btn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #229ED9;
-      color: white;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      font-size: 30px;
-      z-index: 1000;
-    }
-    .float-btn:hover {
-      background-color: #1b8bbf;
-    }
+      background-size: cover; color:#fff; }
+    .overlay { background:rgba(0,0,0,0.6); min-height:100vh;
+      padding:40px 20px; text-align:center; }
+    h1 { font-size:2.8em; margin-bottom:10px; }
+    p { font-size:1.2em; max-width:700px; margin:0 auto 20px; }
+    .photo img { width:240px; height:240px; object-fit:cover;
+      border-radius:50%; border:5px solid #fff; margin:30px 0;
+      box-shadow:0 0 25px rgba(255,255,255,0.3); }
+    .jobs { margin:40px auto; max-width:800px; text-align:left; }
+    .job { background:rgba(255,255,255,0.1); padding:20px;
+      border-radius:10px; margin-bottom:20px; }
+    .job h3 { margin:0 0 10px; font-size:1.5em; }
+    .job p { margin:0; font-size:1.1em; }
+    .float-btn { position:fixed; bottom:20px; right:20px;
+      background:#229ED9; color:#fff; width:60px; height:60px;
+      border-radius:50%; display:flex; align-items:center;
+      justify-content:center; text-decoration:none; font-size:30px;
+      z-index:1000; box-shadow:0 2px 10px rgba(0,0,0,0.3);}
+    .float-btn:hover { background:#1b8bbf;}
   </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
   <div class="overlay">
     <h1>Roman Kudria Recruiter</h1>
     <p>Praca w Polsce i za granicą – realne oferty dopasowane do Ciebie.</p>
-    <div class="photo">
-      <img src="me.jpg" alt="Roman Kudria">
-    </div>
+    <div class="photo"><img src="me.jpg" alt="Roman Kudria"/></div>
     <p>Nazywam się Roman Kudria. Pomagam znaleźć legalną, stabilną pracę w Polsce i za granicą.</p>
 
-    <h2 style="margin-top:40px;">Aktualne oferty pracy:</h2>
-    <p style="margin-bottom:10px;">Poniżej znajdziesz aktualne oferty z serwisu ProjectPlus HR:</p>
+    <div class="jobs">
+      <h2>Aktualne oferty pracy:</h2>
 
-    <iframe src="https://projectplushr.pl/oferty-pracy/" title="Oferty pracy ProjectPlusHR">
-      Twoja przeglądarka nie obsługuje iframe. Zobacz oferty bezpośrednio na
-      <a href="https://projectplushr.pl/oferty-pracy/" target="_blank">projectplushr.pl</a>
-    </iframe>
+      <div class="job">
+        <h3>Operator wózka widłowego – Łubna (Baniocha)</h3>
+        <p>34 zł brutto/h + premia do 1000 zł netto. Praca z użyciem wózka, załadunek, rozładunek. Certyfikat UDT wymagany. :contentReference[oaicite:1]{index=1}</p>
+      </div>
+
+      <div class="job">
+        <h3>Pracownik produkcji – Białystok</h3>
+        <p>30,50 zł brutto/h + 1 zł premia. Produkcja karmy dla zwierząt, praca zmianowa, bez doświadczenia. :contentReference[oaicite:2]{index=2}</p>
+      </div>
+
+      <div class="job">
+        <h3>Magazynier z UDT – Poznań</h3>
+        <p>31 zł brutto/h + premia. Różne stawki za nocne i weekendy, praca w hurtowni spożywczej. :contentReference[oaicite:3]{index=3}</p>
+      </div>
+
+      <div class="job">
+        <h3>Magazynier – Świebodzin</h3>
+        <p>31,50 zł brutto/h + premia. Komplektacja towarów, praca ze skanerem. Legalizacja i zakwaterowanie dostępne. :contentReference[oaicite:4]{index=4}</p>
+      </div>
+
+    </div>
   </div>
 
   <a class="float-btn" href="https://t.me/gridtrendbot" target="_blank" title="Napisz na Telegram">
