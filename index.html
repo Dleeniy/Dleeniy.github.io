@@ -8,18 +8,20 @@
     body { margin:0; font-family:sans-serif;
       background: url('background.jpg') no-repeat center center fixed;
       background-size: cover; color:#fff; }
-    .overlay { background:rgba(0,0,0,0.6); min-height:100vh;
-      padding:40px 20px; text-align:center; }
+    .overlay { background:rgba(0,0,0,0.6); padding:40px 20px; text-align:center;}
     h1 { font-size:2.8em; margin-bottom:10px; }
-    p { font-size:1.2em; max-width:700px; margin:0 auto 20px; }
-    .photo img { width:240px; height:240px; object-fit:cover;
+    p { font-size:1.2em; max-width:700px; margin:0 auto 20px;}
+    .photo img { width:260px; height:260px; object-fit:cover;
       border-radius:50%; border:5px solid #fff; margin:30px 0;
       box-shadow:0 0 25px rgba(255,255,255,0.3); }
-    .jobs { margin:40px auto; max-width:800px; text-align:left; }
+    .jobs { margin:40px auto; max-width:900px; }
     .job { background:rgba(255,255,255,0.1); padding:20px;
-      border-radius:10px; margin-bottom:20px; }
-    .job h3 { margin:0 0 10px; font-size:1.5em; }
-    .job p { margin:0; font-size:1.1em; }
+      border-radius:10px; margin-bottom:30px; display:flex; align-items:center; }
+    .job img { width:200px; height:120px; object-fit:cover;
+      border-radius:8px; margin-right:20px; flex-shrink:0; }
+    .job-details { text-align:left; }
+    .job-details h3 { margin:0 0 8px; font-size:1.4em; }
+    .job-details p { margin:0; font-size:1.1em; }
     .float-btn { position:fixed; bottom:20px; right:20px;
       background:#229ED9; color:#fff; width:60px; height:60px;
       border-radius:50%; display:flex; align-items:center;
@@ -32,34 +34,54 @@
 <body>
   <div class="overlay">
     <h1>Roman Kudria Recruiter</h1>
-    <p>Praca w Polsce i za granicą – realne oferty dopasowane do Ciebie.</p>
+    <p>Praca w Polsce i za granicą – realne oferty pracy z aktualną informacją.</p>
     <div class="photo"><img src="me.jpg" alt="Roman Kudria"/></div>
-    <p>Nazywam się Roman Kudria. Pomagam znaleźć legalną, stabilną pracę w Polsce i za granicą.</p>
+    <p>Nazywam się Roman Kudria. Pomagam znaleźć legalną i stabilną pracę w Polsce i za granicą.</p>
 
-    <div class="jobs">
+    <section class="jobs">
       <h2>Aktualne oferty pracy:</h2>
 
       <div class="job">
-        <h3>Operator wózka widłowego – Łubna (Baniocha)</h3>
-        <p>34 zł brutto/h + premia do 1000 zł netto. Praca z użyciem wózka, załadunek, rozładunek. Certyfikat UDT wymagany. :contentReference[oaicite:1]{index=1}</p>
+        <img src="https://images.unsplash.com/photo-1607968565042-9980f82cf67d" alt="Forklift">
+        <div class="job-details">
+          <h3>Operator wózka widłowego – Świebodzin (UDT)</h3>
+          <p>32 zł brutto/h + premia. Obsługa wózka, załadunek, rozładunek przy hurtowni budowlanej. UDT wymagany. :contentReference[oaicite:2]{index=2}</p>
+        </div>
       </div>
 
       <div class="job">
-        <h3>Pracownik produkcji – Białystok</h3>
-        <p>30,50 zł brutto/h + 1 zł premia. Produkcja karmy dla zwierząt, praca zmianowa, bez doświadczenia. :contentReference[oaicite:2]{index=2}</p>
+        <img src="https://images.unsplash.com/photo-1607968565042-9980f82cf67d" alt="Warehouse">
+        <div class="job-details">
+          <h3>Magazynier UDT SOT – Poznań</h3>
+          <p>31 zł brutto/h + premia. Praca w hurtowni spożywczej z paletami, skanowanie, praca zmianowa. :contentReference[oaicite:3]{index=3}</p>
+        </div>
       </div>
 
       <div class="job">
-        <h3>Magazynier z UDT – Poznań</h3>
-        <p>31 zł brutto/h + premia. Różne stawki za nocne i weekendy, praca w hurtowni spożywczej. :contentReference[oaicite:3]{index=3}</p>
+        <img src="https://images.unsplash.com/photo-1607968565042-9980f82cf67d" alt="Production">
+        <div class="job-details">
+          <h3>Pracownik produkcji – Białystok</h3>
+          <p>30,50 zł brutto/h. Produkcja karmy dla zwierząt, praca bez doświadczenia, zmiany. :contentReference[oaicite:4]{index=4}</p>
+        </div>
       </div>
 
       <div class="job">
-        <h3>Magazynier – Świebodzin</h3>
-        <p>31,50 zł brutto/h + premia. Komplektacja towarów, praca ze skanerem. Legalizacja i zakwaterowanie dostępne. :contentReference[oaicite:4]{index=4}</p>
+        <img src="https://images.unsplash.com/photo-1607968565042-9980f82cf67d" alt="Loading">
+        <div class="job-details">
+          <h3>Rozładunek i załadunek – Świebodzin</h3>
+          <p>31,50 zł brutto/h. Obsługa linii rozładunkowej TIR-ów, prosta praca fizyczna. :contentReference[oaicite:5]{index=5}</p>
+        </div>
       </div>
 
-    </div>
+      <div class="job">
+        <img src="https://images.unsplash.com/photo-1607968565042-9980f82cf67d" alt="Forklift">
+        <div class="job-details">
+          <h3>Operator UDT (Kompania Piwowarska) – Poznań</h3>
+          <p>32 zł brutto/h + premia. Praca w zakładzie piwowarskim, stabilna umowa. :contentReference[oaicite:6]{index=6}</p>
+        </div>
+      </div>
+
+    </section>
   </div>
 
   <a class="float-btn" href="https://t.me/gridtrendbot" target="_blank" title="Napisz na Telegram">
